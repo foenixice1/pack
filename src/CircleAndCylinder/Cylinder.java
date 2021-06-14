@@ -3,12 +3,17 @@ package CircleAndCylinder;
 public class Cylinder extends Circle {
     double h;
 
+    public Cylinder() {
+
+    }
 
     public double getH() {
+
         return h;
     }
 
     public void setH(double h) {
+
         this.h = h;
     }
 
@@ -22,6 +27,8 @@ public class Cylinder extends Circle {
     }
 
     public double setVolume() {
+
         return Math.PI * r * r * h;
     }
+
 }
