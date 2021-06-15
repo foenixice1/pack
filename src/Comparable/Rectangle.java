@@ -4,7 +4,7 @@ public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
-    private Rectangle() {
+    private Rectangle(double v, double v1, String orange, boolean b) {
 
     }
 
@@ -17,6 +17,10 @@ public class Rectangle extends Shape {
         super(color, filled);
         this.width = width;
         this.length = length;
+    }
+
+    public Rectangle() {
+
     }
 
     public double getWidth() {
