@@ -8,10 +8,11 @@ public class Main {
         NhanvienFullTime[] arrNhanvienFulltime = new NhanvienFullTime[0];
         NhanVienPartTime[] arrNhanVienPartTime = new NhanVienPartTime[0];
         do {
-            System.out.println("1.Them moi");
-            System.out.println("2.Hien thi");
-            System.out.println("3.Exit");
-            System.out.println("4.Hien thi DSNV Fulltime co muc luong thap hơn trung binh");
+            System.out.println("Menu");
+            System.out.println("1.Thêm mới");
+            System.out.println("2.Hiển thị");
+            System.out.println("3.Hiển thị DSNV Fulltime có mức lương thấp hơn trung bình");
+            System.out.println("4.Exit");
             int choose = scanner.nextInt();
             switch (choose) {
                 case 1:
@@ -23,7 +24,7 @@ public class Main {
                     } else if (num == 2) {
                         arrNhanVienPartTime = Manager.createPartTime(arrNhanVienPartTime);
                     } else {
-                        System.out.println("ko hieu ");
+                        System.out.println("Sai rồi nhập lại thôi ");
                     }
                     break;
                 case 2:
@@ -37,8 +38,6 @@ public class Main {
                     break;
 
                 case 3:
-                    System.exit(0);
-                case 4:
                     float TBC = Manager.SUMluongthuc / Manager.i;
                     for (int i = 0; i < arrNhanvienFulltime.length; i++) {
                         if (Manager.arrLuongThucFullTime[i] < TBC) {
@@ -46,6 +45,8 @@ public class Main {
                         }
                     }
                     break;
+                case 4:
+                    System.exit(0);
             }
 
         } while (true);
