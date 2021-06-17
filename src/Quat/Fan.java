@@ -13,6 +13,13 @@ public class Fan {
     public Fan() {
     }
 
+    public Fan(int speed, boolean on, double radius, String color) {
+        this.speed = speed;
+        this.on = on;
+        this.radius = radius;
+        this.color = color;
+    }
+
     public int getSLOW() {
         return SLOW;
     }

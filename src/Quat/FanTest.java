@@ -1,6 +1,6 @@
 package Quat;
 
-public class FanTest {
+public class FanTest extends Fan{
     public static void main(String[] args) {
         Fan fan1 = new Fan();
        fan1.setSpeed(fan1.getFAST());

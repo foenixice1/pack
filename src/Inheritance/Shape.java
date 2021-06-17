@@ -90,7 +90,7 @@ public class Shape {
                     + super.toString();
         }
 
-        public class CircleTest {
+        public static class CircleTest {
 
 
             public static void main(String[] args) {
