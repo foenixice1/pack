@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/Java/List.iml" filepath="D:/Java/List.iml" />
       <module fileurl="file://$PROJECT_DIR$/private.iml" filepath="$PROJECT_DIR$/private.iml" />
     </modules>
   </component>
