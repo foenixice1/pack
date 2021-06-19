@@ -1,4 +1,4 @@
-package HomeWork;
+package HomeWork2;
 
 abstract class Phone {
     private String name;
